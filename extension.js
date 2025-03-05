@@ -16,8 +16,8 @@ function activate(context) {
 			editor.edit((editBuilder) => {
 				for (let i = 0; i < document.lineCount; i++) {
 					let line = document.lineAt(i);
-					let updatedLine = line.text.replace(/(\d+)px/g, (match, p1) => {
-						let remValue = (parseInt(p1) / baseFontSize).toFixed(2);
+					let updatedLine = line.text.replace(/(\d+)px/g, (match, param) => {
+						let remValue = (parseInt(param) / baseFontSize).toFixed(1);
 						return `${remValue}rem`;
 					});
 
@@ -36,7 +36,4 @@ function activate(context) {
 
 function deactivate() {}
 
-module.exports = {
-	activate,
-	deactivate,
-};
+module.exports = { activate, deactivate };
