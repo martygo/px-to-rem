@@ -1,0 +1,29 @@
+{
+	"name": "px-to-rem-vscode-extension",
+	"displayName": "PX to REM Converter",
+	"description": "Converts pixel values to rem in CSS files",
+	"version": "1.0.0",
+	"publisher": "Martins Gouveia",
+	"author": "Martins Gouveia",
+	"license": "ISC",
+	"main": "extension.js",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "px-to-rem.convert",
+				"title": "Convert PX to REM"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.97.0",
+		"vscode": "^1.1.37",
+		"typescript": "<4.8"
+	}
+}
