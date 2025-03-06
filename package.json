@@ -3,15 +3,34 @@
 	"displayName": "PX to REM Converter",
 	"description": "Converts pixel values to rem in CSS files",
 	"version": "1.0.0",
-	"publisher": "Martins Gouveia",
+	"publisher": "martygo",
 	"author": "Martins Gouveia",
-	"license": "ISC",
+	"license": "SEE LICENSE IN LICENSE.txt",
 	"main": "extension.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/martygo/px-to-rem.git"
+	},
+	"homepage": "https://github.com/martygo/px-to-rem/blob/main/README.md",
 	"engines": {
-		"vscode": "^1.22.0"
+		"vscode": "^1.97.0"
 	},
 	"categories": [
 		"Other"
+	],
+	"keywords": [
+		"px",
+		"rem",
+		"converter",
+		"css"
+	],
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#007ACC",
+		"theme": "dark"
+	},
+	"activationEvents": [
+		"onCommand:px-to-rem.convert"
 	],
 	"contributes": {
 		"commands": [
