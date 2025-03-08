@@ -34,6 +34,8 @@ By default, 1rem = 16px. You can change this in `settings.json`:
 
 🚀 Now you have a **fully working VSCode Extension** to convert `px` to `rem`!
 
+---
+
 ### **❤️ Support**
 
 If you liked the project, I will appreciate if you leave a star. 🌟😊
